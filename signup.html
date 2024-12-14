@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="signup.css">
+
+    
+    <link rel="icon" href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+
+            <div class="logo_Container">
+                <div class="logo">
+                    <img
+                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" />
+                </div>
+                <div class="explore">
+                    <a href="#">
+                        <p>Explore <span class="plus-icon">Plus</span></p>
+                        <img
+                            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" />
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="search">
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="Search for products, brands and more">
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg"><g fill="#2874F1" fill-rule="evenodd"><path class="_34RNph" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="_34RNph" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="login">
+                <button>Login</button>
+            </div>
+            <div class="become-seller">
+                Become a Seller
+            </div>
+
+
+              <!-- .....more..... -->
+
+            <div class="more_link">
+                More
+                <i class="fa-solid fa-angle-down icon_more"></i>
+                <div class="more_menu">
+                    <div class="more_menu_list">
+    
+                        <a href="#">
+                            <img src="./icon/notificationIcon.svg" class="menu_nav_icon" />
+                            <p>Notification Preferences</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/customerIcon.svg" class="menu_nav_icon" />
+                            <p>24 X 7 Customer Care</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/advertiseIcon.svg" class="menu_nav_icon" />
+                            <p>Advertise</p>
+                        </a>
+                        <a href="#">
+                            <img src="./icon/downloadIcon.svg" class="menu_nav_icon" />
+                            <p>Download App</p>
+                        </a>
+    
+    
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="cart" onclick="nologin()">
+                <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+                Cart
+            </div>
+        </div>
+    </header>
+
+
+
+
+  <div id="container"></div>
+   <form>  
+  <div id="outerbox">
+    <div id="innerbox">
+           <div class="leftinnerbox">
+            <p class="para1">Looks like you're new here!
+              </p>
+              <p class="para2">  Sign up with your mobile number to get started</p>
+           <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;margin-top: 30px;width: 75%;">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="hero_signup">
+           </div>
+            </div>
+           <div class="rightinnerbox">
+
+            <div style="display: flex;justify-content: center;margin-top: 20px;">
+
+                <input id="phone" class="mobile" type="number" placeholder="Enter Mobile Number"/>
+            </div>
+            <div style="display: flex;justify-content: center;margin-top: 20px">
+    
+                <input id="naam" class="name" type="text" placeholder="Enter your Name"/>
+            </div>
+            <div style="display: flex;justify-content: center;margin-top: 20px;">
+
+                <input id="pass" class="password" type="password" placeholder="Enter Password"/>
+            </div>
+            <div style="margin-top: 20px;">
+                <p class="textm">By continuing, you agree to Flipkart's 
+                    <span style="color: blue;"> Terms of Use</span>
+                    and <span style="color: blue;">Privacy Policy.</span></p>
+            </div>
+            
+                        
+    <div class="container" style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+        <div class="btn" onclick="Signup()" style="cursor: pointer; width: 86%; padding: 13px; border-radius: 5px; text-align: center;" >CONTINUE</div>
+      </div>
+
+
+
+            <div style="margin-top: 10px;display: flex;justify-content: center;">
+                <button onclick="window.location.href='signin.html' " style="border: none;background-color: whitesmoke;color: #2874F0;;font-size: 20px;width: 90%;padding: 9px;border-radius: 5px; cursor: pointer; ">Existing User? Login</button>
+            </div> 
+        </div>
+           
+    </div>
+  </div>
+</form>
+</body>
+</html>
+
+  <script src="signup.js"></script>
